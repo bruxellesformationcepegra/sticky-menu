@@ -12,8 +12,8 @@ function stickyFct() {
 
 $(window).scroll(function () {
     stickyFct();
-    $(window).resize(function () {
-        stickyNav = $('nav').offset().top;
-        stickyFct();
-    });
+});
+$(window).resize(function () {
+    stickyNav = $('nav').offset().top;
+    stickyFct();
 });
